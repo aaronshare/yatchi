@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="../images/fav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+</head>
+<style>
+    .overlay-nav-dropdown {
+        display:none;
+    left: 0;
+    top: 0;
+    background: #00000050;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+</style>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <a class="navbar-brand" href="#"><img src="../images/white-logo.png" class="img-fluid"
+                                alt=""></a>
+                    </div>
+                    <div class="col-5">
+                        <nav class="navbar navbar-expand-lg ">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                <ul class="navbar-nav mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./get-qualified.html">Get Qualified</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./products-and-services.html">Product & Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="./resources.html">Resources</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-flex">
+                            <form class="d-flex" role="search">
+                                <div class="top-searchbar">
+                                    <input class="form-control me-2 search-bar" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <div class="searchbar-icon">
+                                        <img src="../images/search-icon-header.png">
+                                    </div>
+                                </div>
+                            </form>
+                            <script>
+                                function overlayNav(){
+                                    document.querySelector('.overlay-nav-dropdown').style.display = 'block'
+                                }
+                                function closeOverlayNav(){
+                                    document.querySelector('.overlay-nav-dropdown').style.display = 'none'
+                                }
+                            </script>
+                            <div class="dropdown">
+                                <a onclick="overlayNav()" class="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <img src="../images/profile-icon.png" alt=""><span class="log-out">Log Out</span>
+                                        </div>                           
+                                    </div>
+                                </a>
+                                <div onclick="closeOverlayNav()" class="overlay-nav-dropdown"></div>
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item" href="./user-dashboard/profile.html"><img
+                                                src="../images/dropdown-profile.png" alt="">My Account</a></li>
+                                                  <li><a class="dropdown-item" href="./user-dashboard/my-drive.html"><img
+                                                src="../images/dropdown-drive.png" alt="">My Drive</a></li>
+                                                  <li><a class="dropdown-item" href="./user-dashboard/notifications.html"><img
+                                                src="../images/dropdown-notifications.png" alt="">Notifications</a></li>
+                                                  <li><a class="dropdown-item" href="#"><img
+                                                src="../images/dropdown-setting.png" alt="">Preferences</a></li>
+
+                                    <li><a class="dropdown-item" href="https://yachtieflix-new.project-demo.live/src/pages/login.html"><img src="../images/dropdown-logout.png"
+                                                alt="">Log Out</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="sidebar-div">
+                            <aside>
+                                <div class="sidebar">
+                                    <h3 class="aside-links-heading">Quick Links</h3>
+                                    <ul>
+                                        <li><a href="">Featured Videos</a></li>
+                                        <li><a href="">Top Rated</a></li>
+                                        <li><a href="">Most Recent</a></li>
+                                        <li><a href="">Continue Watching</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sidebar">
+                                    <a href="./videopage-category.html"><h3 class="aside-links-heading">Video Categories</h3></a>
+
+                                    <ul>
+                                        <li><a href="./videopage.html">Geting Started</a></li>
+                                        <li><a href="./videopage.html">Deck</a></li>
+                                        <li><a href="">Interior</a></li>
+                                        <li><a href="">Engineering</a></li>
+                                        <li><a href="">Galley</a></li>
+                                        <li><a href="">Mental & Physical WellBeing</a></li>
+                                        <li><a href="">Speciality</a></li>
+                                        <li><a href="">Other</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="sidebar">
+                                    <h3 class="aside-links-heading">Join the fun</h3>
+                                    <ul>
+                                        <li><a href="./become-a-contributor.html">Become a Contributor</a></li>
+                                        <li><a href="">Create a Course</a></li>
+                                        <li><a href="">Register Your Business</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="home-main-content">
+                                    <video class="home-bow-vid" id="myVideo">
+                                    <source src="../images/Relaxing-bg.mp4" type="video/mp4">
+                                </video>
+                                <div class="row align-items-center front-curtain">
+                                    <div class="col-8">
+                                        <div class="banner-content">
+                                            <h1 class="banner-heading">How to <br>Tie A <span>BOWLINE</span></h1>
+                                            <div class="border-bottom"></div>
+                                            <p class="banner-para">Amet minim mollit non deserunt ullamco est sit aliqua
+                                                dolor<br> do amet sint. Velit officia consequat duis enim velit mollit.
+                                                Exercitation<br> veniam consequat sunt nostrud amet.</p>
+                                            <div class="pt">
+                                                <button class="btn btn-dark-bg">Watch Now</button>
+                                                <button class="btn btn-more">Learn More <img class="arrow"
+                                                        src="../images/learn-more-arrow.png" alt=""></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                       <span><button class="bow-vid-btn" onclick="playVid()" type="button"><img src="../images/videopage-vid-button.png" alt=""> </button></span>
+                                    </div>
+                                    <div class="col-1 vid-can">
+                                        <img src="../images/vid-canvas.png" alt="">
+                                    </div>
+                                </div>              
+
+                            <div class="videos-slider">
+                                <div class="row justify-content-center align-items-center mt-3">
+                                    <div class="col-10">
+                                        <h2 class="video-heading">Featured Videos</h2>
+                                    </div>
+                                    <div class="col-2 d-flex ">
+                                        <a href="" class="see home-see">See All</a>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-10">
+                                        <div class="center">
+                                            <div>
+                                                <div class="slider-img">
+                                                    <img src="../images/sliderimg/fv02.png" class="img-fluid" alt="">
+                                                    <div class="new">
+                                                        <h4>New</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="slider-img">
+                                                    <img src="../images/sliderimg/fv02.png" class="img-fluid" alt="">
+                                                    <div class="new">
+                                                        <h4>New</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="slider-img">
+                                                    <img src="../images/sliderimg/fv02.png" class="img-fluid" alt="">
+                                                    <div class="new">
+                                                        <h4>New</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="slider-img">
+                                                    <img src="../images/sliderimg/fv02.png" class="img-fluid" alt="">
+                                                    <div class="new">
+                                                        <h4>New</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="slider-img">
+                                                    <img src="../images/sliderimg/fv02.png" class="img-fluid" alt="">
+                                                    <div class="new">
+                                                        <h4>New</h4>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!---edit-->
+                            <div class="products-and-service featured-school featured-school-ps">
+                                <div class="row justify-content-between align-items-center mt-4">
+                                    <div class="col-10">
+                                        <h2 class="video-heading">Featured Schools</h2>
+                                    </div>
+                                    <div class="col-2 d-flex justify-content-end">
+                                        <a href="" class="see">See All</a>
+                                    </div>
+                                </div>
+                                <div class="row  mt-4 home-product-services">
+                                    <div class="col-4">
+                                        <div class="product-and-service-img">
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                            <div class="product-and-service-overlay"></div>
+
+                                            <div class="product-and-service-content resources-box-heading">
+                                                <h4>How to tie a BOWLINE
+                                                </h4>
+                                                <p>Featured Galley Interior</p>
+                                                <p class="hover-para">Amet minim mollit non deserunt ullamco est sit
+                                                    aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                <a href="" class="">Login To View More </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="product-and-service-img">
+                                            <img src="../images/product-and-service/2.png" class="img-fluid" alt="">
+                                            <div class="product-and-service-overlay"></div>
+
+                                            <div class="product-and-service-content resources-box-heading">
+                                                <h4>How to tie a BOWLINE
+                                                </h4>
+                                                <p>Featured Galley Interior</p>
+                                                <p class="hover-para">Amet minim mollit non deserunt ullamco est sit
+                                                    aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                <a href="" class="">Login To View More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="product-and-service-img">
+                                            <img src="../images/product-and-service/3.png" class="img-fluid" alt="">
+                                            <div class="product-and-service-overlay"></div>
+
+                                            <div class="product-and-service-content resources-box-heading">
+                                                <h4>How to tie a BOWLINE
+                                                </h4>
+                                                <p>Featured Galley Interior</p>
+                                                <p class="hover-para">Amet minim mollit non deserunt ullamco est sit
+                                                    aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                <a href="" class="">Login To View More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---edit-->
+                            <div class="courses">
+                                <div class="row justify-content-center align-items-center  mt-1">
+                                    <div class="col-10">
+                                        <h2 class="video-heading">Featured Courses</h2>
+                                    </div>
+                                    <div class="col-2 d-flex justify-content-end">
+
+                                        <a href="" class="see">See All</a>
+                                    </div>
+
+                                </div>
+                                <div class="row justify-content-center featured-courses-section-home">
+                                    <div class="responsive">
+                                        <div>
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div>
+
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div>
+
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div>
+
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div>
+
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div>
+
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div>
+
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div>
+
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div>
+
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                                <!-- Resources-->
+                            <div class="resources">
+                                <div class="row justify-content-center align-items-center mt-3">
+                                    <div class="col-10">
+                                        <h2 class="video-heading">Resources</h2>
+                                    </div>
+                                    <div class="col-2 d-flex justify-content-end">
+                                        <a href="" class="see home-see home-resource">See All</a>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4 ">
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <div class="image-box">
+                                                    <img src="../images/res-img-1.png" class="img-fluid image-box-image" alt="">
+                                                    <div class="overlay-box">
+                                                        <h4>How to tie a BOWLINE </h4>
+                                                        <p>Featured Galley Interior</p>
+                                                        <a href="" class="res-1-text">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="image-box-01">
+                                                    <img src="../images/resources-img/2.png" class="img-fluid image-box-image-01" alt="">
+                                                    <div class="overlay-box-01">
+                                                        <h4><span class="how-to">How to tie a </span>BOWLINE </h4>
+                                                        <p>Featured Galley Interior</p>
+                                                        <a href="" class="res-1-text-01">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="image-box-01">
+                                                    <img src="../images/resources-img/Rectangle-27.png" class="img-fluid image-box-image-01" alt="">
+                                                    <div class="overlay-box-01">
+                                                        <h4><span class="how-to">How to tie a </span> BOWLINE </h4>
+                                                        <p>Featured Galley Interior</p>
+                                                        <a href="" class="res-1-text-01">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="image-box-01">
+                                                    <img src="../images/resources-img/Rectangle-28.png" class="img-fluid image-box-image-01" alt="">
+                                                    <div class="overlay-box-01">
+                                                        <h4><span class="how-to">How to tie a </span> BOWLINE </h4>
+                                                        <p>Featured Galley Interior</p>
+                                                        <a href="" class="res-1-text-01">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-4 ">
+                                        <div class="image-box-right">
+                                            <img src="../images/right-rec.png" class="img-fluid image-box-image-right" alt="">
+                                            <div class="overlay-box-right">
+                                                <h4><span class="how-to">How to tie a </span><br>BOWLINE </h4>
+                                                <p>Featured Galley Interior</p>
+                                                <a href="" class="res-1-text-right">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Resources-->
+                            <div class="products-and-service ">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-10">
+                                        <h2 class="video-heading">Products & Services</h2>
+                                    </div>
+                                    <div class="col-2 d-flex justify-content-end">
+                                        <a href="" class="see home-see">See All</a>
+                                    </div>
+
+                                </div>
+                                <div class="row  mt-4 home-product-services">
+                                    <div class="col-4">
+                                        <div class="product-and-service-img">
+                                            <img src="../images/product-and-service/1.png" class="img-fluid" alt="">
+                                            <div class="product-and-service-overlay"></div>
+
+                                            <div class="product-and-service-content resources-box-heading">
+                                                <h4>How to tie a BOWLINE
+                                                </h4>
+                                                <p>Featured Galley Interior</p>
+                                                <p class="hover-para">Amet minim mollit non deserunt ullamco est sit
+                                                    aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                <a href="" class="">Login To View More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="product-and-service-img">
+                                            <img src="../images/product-and-service/2.png" class="img-fluid" alt="">
+                                            <div class="product-and-service-overlay"></div>
+
+                                            <div class="product-and-service-content resources-box-heading">
+                                                <h4>How to tie a BOWLINE
+                                                </h4>
+                                                <p>Featured Galley Interior</p>
+                                                <p class="hover-para">Amet minim mollit non deserunt ullamco est sit
+                                                    aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                <a href="" class="">Login To View More </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="product-and-service-img">
+                                            <img src="../images/product-and-service/3.png" class="img-fluid" alt="">
+                                            <div class="product-and-service-overlay"></div>
+
+                                            <div class="product-and-service-content resources-box-heading">
+                                                <h4>How to tie a BOWLINE
+                                                </h4>
+                                                <p>Featured Galley Interior</p>
+                                                <p class="hover-para">Amet minim mollit non deserunt ullamco est sit
+                                                    aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                                <a href="" class="">Login To View More </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+            <!-- FOOTER START -->
+                <footer class="footer-bottom">
+                    <div class="container footer-border-t"></div>
+                    <div class="container">
+                        <div class="footer-new">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="about-footer-col">
+                                        <h2>About</h2>
+                                        <p class="border-f"></p>
+                                        <div class="li-footer">
+                                            <li><a href="">Our Story</a></li>
+                                            <li><a href="">Giving Back</a></li>
+                                            <li><a href="">Press & Media</a></li>
+                                            <li><a href="">Promotions</a></li>
+                                            <li><a href="">Upcoming Events</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="about-footer-col Features">
+                                        <h2>Features</h2>
+                                        <p class="border-f"></p>
+                                        <div class="li-footer">
+                                            <li><a href="">For Crew</a></li>
+                                            <li><a href="">For Yacht Owners & Enthusiasts</a></li>
+                                            <li><a href="">Contributors</a></li>
+                                            <li><a href="">Business Account</a></li>
+                                            <li><a href="">Ship Account</a></li>
+                                            <li><a href="">Crew Intro</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="about-footer-col Solutions">
+                                        <h2>Solutions</h2>
+                                        <p class="border-f"></p>
+                                        <div class="li-footer">
+                                            <li><a href="">Advertise With Us</a></li>
+                                            <li><a href="">Course Hosting & Sales</a></li>
+                                            <li><a href="">Product Creation & Sales </a></li>
+                                            <li><a href="">Recruitment</a></li>
+                                            <li><a href="">Vessel Management System</a></li>
+                                            <li><a href="">Ship Resources</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="footer-icon-polygon">
+                                        <img src="/src/images/support-icon.png" alt="">
+                                        <img src="/src/images/faq-icon.png" alt="">
+                                        <img src="/src/images/contactus-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="footer-logo">
+                                        <img src="/src/images/Logo-Icon-png 1.png" alt="">
+                                    </div>
+                                    <div class="footer-icons">
+                                        <a href=""><img src="/src/images/insta-footer.png"></a>
+                                        <a href=""><img src="/src/images/fb-footer.png"></a>
+                                        <a href=""><img src="/src/images/tiktok-footer.png"></a>
+                                        <a href=""><img src="/src/images/yt-footer.png"></a>
+                                        <a href=""><img src="/src/images/twitter-footer.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-top">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p class="copyright">© All Copyright 2023 All Rights Reserved</p>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="d-flex footer-links add-f-links">
+                                        <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+                                        <li><a href="./cookiepolicy.html">Cookie Policy</a> </li>
+                                        <li><a href="./termsofuse.html">Terms of Use</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            <!-- FOOTER ENDS -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+ <!--// Featured Videos-->
+    <script>
+        $(document).ready(function () {
+            $('.center').slick({
+                centerMode: true,
+                centerPadding: '90px',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: `<div class="slides-btn"><button class="btn slide-btn previous"><img src="../images/home-arrow-left.png" class="img-fluid" alt=""></button> </div>`,
+                nextArrow: `<div class="slider-btn-next">
+                                <button class="btn slide-btn next"><img src="../images/home-arrow-right.png" class="img-fluid" alt=""></button>
+                               </div>`,
+                //   autoplay: true,
+                //  arrows: false,
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+        
+        <!--// Featured Videos-->
+        // for Featured Courses
+
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            // nextArrow: '<div class="right"><i class="fa fa-angle-right"></i></div>',
+            // prevArrow: '<div class="left"><i class="fa fa-angle-left"></i></div>',
+            dots: true,
+            customPaging: function (slider, i) {
+
+                return '<div class="pager__item" id=' + i + "></div>";
+            },
+            useTransform: true,
+            cssEase: "ease-in-out",
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        
+         // for Featured Courses
+    </script>
+
+    <script> 
+        var vid = document.getElementById("myVideo"); 
+        
+        function playVid() { 
+          vid.play(); 
+          document.querySelector('.bow-vid-btn').style.display = 'none'
+          document.querySelector('.front-curtain').style.opacity = '0'
+        } 
+    </script> 
+    .front-curtain
+</body>
+</html>
